@@ -127,4 +127,5 @@ async def check_macro_and_events():
             print(f"Ошибка проверки мероприятий: {e}")
 
 # Безопасный запуск через скрытые переменные Render (без открытого токена)
+import os
 bot.run(os.getenv("DISCORD_TOKEN"))
